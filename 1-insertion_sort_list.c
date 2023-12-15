@@ -34,7 +34,7 @@ void insertion_sort_list(listint_t **list)
 }
 
 /**
- * swap - swaps two node of doubly linked list
+ * swap_node - swaps two node of doubly linked list
  *
  * @left: the left node to be swapped
  * @right: the right node to be swapped
