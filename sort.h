@@ -26,4 +26,7 @@ size_t smallest_num(int *array, size_t start, size_t end);
 void quick_sort(int *array, size_t size);
 void split(int *array, int start, int end, int pivot);
 void swap(int *a, int *b);
+void shell_sort(int *array, size_t size);
+int size_of_list(listint_t *head);
+void cocktail_sort_list(listint_t **list);
 #endif
