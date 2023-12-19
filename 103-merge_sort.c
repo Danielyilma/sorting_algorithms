@@ -12,10 +12,12 @@
 
 void merge_sort(int *array, size_t size)
 {
-	int i = 0, *array2 = malloc(sizeof(int) * size);
+	int i = 0, *array2;
 
-	if (!array2 || size <= 1)
+	if (!array || size <= 1)
 	return;
+
+	array2 = malloc(sizeof(int) * size);
 
 	merge_split(array, 0, size - 1, array2);
 
