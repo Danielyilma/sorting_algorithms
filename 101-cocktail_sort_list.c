@@ -12,10 +12,12 @@
 void cocktail_sort_list(listint_t **list)
 {
 	listint_t *iter;
-	int size = size_of_list(*list), i = 0, j = 0;
+	int size, i = 0, j = 0;
 
 	if (list == NULL || (*list) == NULL || (*list)->next == NULL)
 	return;
+
+	size = size_of_list(*list);
 
 	for (i = 0; i < size - 1; i++)
 	{
