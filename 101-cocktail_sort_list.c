@@ -15,6 +15,7 @@ void cocktail_sort_list(listint_t **list)
 	int size = size_of_list(*list), i = 0, j = 0;
 
 	if (list == NULL || (*list) == NULL || (*list)->next == NULL)
+	return;
 
 	for (i = 0; i < size - 1; i++)
 	{
