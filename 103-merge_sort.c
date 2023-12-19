@@ -75,6 +75,9 @@ void merge(int *array1, int start, int end, int *array2)
 {
 	int i, j, mid, k;
 
+	if ((start + end) % 2 == 0)
+	mid = (start + end - 1) / 2;
+	else
 	mid = (start + end) / 2;
 	printf("Merging...\n[left]: ");
 	for (i = start; i <= mid; i++)
