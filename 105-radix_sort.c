@@ -3,7 +3,7 @@ void count(int *array, int place, int size);
 
 void radix_sort(int *array, size_t size)
 {
-	int i, largest, place = 1;
+	int i, largest = 0, place = 1;
 
 	for (i = 0; i < (int)size; i++)
 	{
@@ -49,7 +49,7 @@ void count(int *array, int place, int size)
 		count[i] = count[i] + count[i - 1];
 
 	/*filling the copied array with the place of digit order*/
-	for (i = 0; i < size; i++)
+	for (i = size - 1; i >= 0; i--)
 	{
 		index = array[i] / place;
 		count[index % 10]--;
