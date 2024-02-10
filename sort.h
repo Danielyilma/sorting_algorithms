@@ -37,4 +37,5 @@ void merge_split(int *array, int start, int end, int *array2);
 void heap_sort(int *array, size_t size);
 void heapify(int *array, int size);
 void sift_down(int *array, int start, int end , int size);
+void radix_sort(int *array, size_t size);
 #endif
